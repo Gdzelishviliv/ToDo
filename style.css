@@ -14,7 +14,6 @@ body{
     margin-top:162px;
 }
 .card{
-    width: 430px;
     background-color: #fff;
     border-radius:10px;
 }
@@ -32,6 +31,7 @@ body{
     position: absolute;
 }
 #currentDayOfWeek{
+    font-family: 'Russo One', sans-serif;
     bottom: 66px;
     right: 28px;
     font-size: 18px;
@@ -39,6 +39,7 @@ body{
     color: #fff;
 }
 #currentDateTime{
+    font-family: 'Russo One', sans-serif;
     bottom: 13px;
     right: 28px;
     font-size: 48px;
@@ -50,6 +51,81 @@ body{
     display: flex;
     gap: 10px;
 }
+.type-sec{
+    margin-top: 23px;
+    border-radius: 5px;
+    margin-bottom: 36px;
+}
 #inputi{
-    
+    border: transparent;
+    background: #EBEFF2;
+    outline: none;
+    height: 48px;
+}
+.input-with-icn{
+    padding-left: 14px;
+    background: #EBEFF2;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    width: 275px;
+    gap: 10px;
+}
+.plus-btn{
+    width: 88px;
+    height: 49px;
+    background: url(./Vector.svg);
+    background-repeat: no-repeat;
+    background: #20EEB0;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+}
+.list button {
+    background: url(./akar-icons_trash-can.svg);
+    background-repeat: no-repeat;
+    height: 27px;
+    width: 27px;
+    border: 0px;
+    cursor: pointer;
+}
+li{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 29px;
+    align-items: center;
+    margin-bottom: 24px;
+    color: #0D0D0D;
+    font-size: 18px;
+    font-weight: 500;
+}
+.list{
+    padding: 0px;
+}
+
+.list input[type="button"]{
+    background-color: transparent;
+    border:3.5px solid #20EEB0;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.list li .clicked {
+    background: url(./akar-icons_circle\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-position: -2.5px;
+}
+li div{
+    display: flex;
+    gap :14px;
+}
+h1{
+    color: #007FDB;
+    font-size: 96px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
 }

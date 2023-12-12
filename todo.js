@@ -30,3 +30,39 @@ function updateCurrentDateTime() {
 setInterval(updateCurrentDateTime, 1000);
 
 updateCurrentDateTime();
+
+function addItem() {
+    const input = document.getElementById("inputi");
+    const inputValue = input.value.trim();
+
+    if (inputValue.length > 1) {
+        const li = document.createElement('li');
+
+        const checkboxDiv = document.createElement('div');
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'button';
+        checkbox.value = ''; // Set a value to make the button visible
+        
+
+        const removeBtn = document.createElement('button');
+        removeBtn.innerText = '';
+        removeBtn.onclick = function () {
+            li.remove();
+        };
+
+        checkboxDiv.appendChild(checkbox);
+        checkboxDiv.appendChild(removeBtn);
+
+        li.appendChild(document.createTextNode(inputValue));
+        li.appendChild(checkboxDiv);
+
+        checkbox.addEventListener('click', function () {
+            checkbox.classList.toggle('clicked');
+        });
+
+        document.getElementById("todoList").appendChild(li);
+
+        input.value = "";
+    }
+}
