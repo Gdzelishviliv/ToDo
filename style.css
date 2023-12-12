@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: #eee;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:162px;
+}
+.card{
+    width: 430px;
+    background-color: #fff;
+    border-radius:10px;
+}
+.date{
+    position: relative;
+    height: 202px;
+    border-radius: 10px 10px 0px 0px;
+    background: url(./Rectangle\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.date p{
+    margin: 0px;
+    text-align: end;
+    position: absolute;
+}
+#currentDayOfWeek{
+    bottom: 66px;
+    right: 28px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+#currentDateTime{
+    bottom: 13px;
+    right: 28px;
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+}
+.type-sec{
+    padding-inline: 28px;
+    display: flex;
+    gap: 10px;
+}
+#inputi{
+    
+}
