@@ -63,6 +63,7 @@ body{
     height: 48px;
 }
 .input-with-icn{
+    border-radius: 5px;
     padding-left: 14px;
     background: #EBEFF2;
     display: flex;
