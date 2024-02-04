@@ -39,7 +39,7 @@ function addItem() {
         const checkboxDiv = document.createElement('div');
         const checkbox = document.createElement('input');
         checkbox.type = 'button';
-        checkbox.value = ''; // Set a value to make the button visible
+        checkbox.value = ''; 
         const removeBtn = document.createElement('button');
         removeBtn.innerText = '';
         removeBtn.onclick = function () {
